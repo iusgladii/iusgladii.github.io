@@ -11290,7 +11290,7 @@ body {
   /*background: url("../assets/Aliasing\ Waveform.jpeg") no-repeat center center fixed;*/
   /*background-image: linear-gradient(.25turn, black, 10%, white), url("../assets/Aliasing\ Waveform.jpeg");*/
   background-image:
-    linear-gradient(45deg,
+    linear-gradient(0deg,
     rgba(199, 186, 87, 100),
     rgba(50, 106, 117, 100)), url("../assets/Aliasing\ Waveform.jpeg");
     width: 100%;
