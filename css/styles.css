@@ -11287,6 +11287,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background: url("../assets/Aliasing\ Waveform.jpeg") no-repeat center center fixed;
+  /*background: url("../assets/Aliasing\ Waveform.jpeg") no-repeat center center fixed;*/
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../assets/Aliasing\ Waveform.jpeg");
   background-size: cover;
 }
