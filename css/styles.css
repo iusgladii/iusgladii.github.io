@@ -11290,9 +11290,9 @@ body {
   /*background: url("../assets/Aliasing\ Waveform.jpeg") no-repeat center center fixed;*/
   /*background-image: linear-gradient(.25turn, black, 10%, white), url("../assets/Aliasing\ Waveform.jpeg");*/
   background-image:
-    linear-gradient(to right,
+    linear-gradient(180deg,
     transparent,
-    darkblue), url("../assets/Aliasing\ Waveform.jpeg");
+    black), url("../assets/Aliasing\ Waveform.jpeg");
   background-size: cover;
   color: white;
 }
