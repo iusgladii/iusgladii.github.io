@@ -11292,6 +11292,7 @@ body {
   background-image:
     linear-gradient(to right,
     transparent,
-    mistyrose), url("../assets/Aliasing\ Waveform.jpeg");
+    darkblue), url("../assets/Aliasing\ Waveform.jpeg");
   background-size: cover;
+  color: white;
 }
