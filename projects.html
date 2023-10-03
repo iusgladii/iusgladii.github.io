@@ -1,37 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Gus Richter - Projects</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="index.html">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="articles.html">Articles</a></li>
-                    </ul>
-                </div>
+	<head>
+		<meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/Professional Photo - RichterAugustus.jpg" />
+		<title>Gus Richter - Projects</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">Gus Richter</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:gus@gusrichter.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <div id="about-section">
+        <span class="subheader-text">Educational and Demographic Background</span>
+        <div class="about-section-content">
+          <div class="body-text">I am an undergraduate student attending Indiana University. I am close to completing a B.S. in Computer Science with a minor in Mathematics from the Luddy School of Informatics, Computing, and Engineering as well as a B.S. in Audio Engineering and Sound Production from the Jacobs School of Music. I am currently applying to graduate programs in order to pursue a Ph.D. research in numerical algorithms.</div>
+          <div class="body-text">The R&D work I engage in lies at the cross-section of multiple fields: algorithmic design, mathematical analysis, electronic engineering, and more. I am interested in the study of computation, specifically as it relates to the modeling of physical systems and the intersection of machine learning and signal processing.</div>
+          <div class="body-text">I am a Latino male who grew up in rural Indiana - on the outskirts of Bloomington. I always exceled in mathematics. In elementary school, I completed mad minute math tests and classes at levels far exceeding my peers'. I was on the math team in middle school, and I am currently studying to compete in the Putnam competition in December.</div>
+        </div>
+      </div>
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">Recent Work and Research Experience</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <section>
-        </section>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/MSP430 MCU Close-Up.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Radiation Analysis of Microprocessors in Space</div>
+              <div class="body-text project-card-text">Learn more about my semester research at IU; I am designing novel testing techniques for improved analysis of total ionizing dose degradation in embedded systems.</div>
+            </div>
+            <a class="button" href="./project-pages/radiation-analysis-of-microprocessors-in-space.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/Headroom Measurement Lab Setup.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Signal Chain Web Tool Development</div>
+              <div class="body-text project-card-text">Learn more about how I contributed to the development of a precision signal chain design tool during my summer internship at Analog Devices.</div>
+            </div>
+            <a class="button" href="./project-pages/signal-chain-web-tool-development.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/Energy Analysis of Algorithms on PC.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Energy Consumption Analysis of Long Integer Algorithms</div>
+              <div class="body-text project-card-text">Learn more about the large integer library I wrote and energy software analysis I did during my NSF summer research internship at IUPUI.</div>
+            </div>
+            <a class="button" href="./project-pages/energy-consumption-analysis-of-long-integer-algorithms.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/MSP430 MCU Close-Up.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Radiation Analysis of Microprocessors in Space</div>
+              <div class="body-text project-card-text">Learn more about my semester research at IU; I am designing novel testing techniques for improved analysis of total ionizing dose degradation in embedded systems.</div>
+            </div>
+            <a class="button" href="./project-pages/radiation-analysis-of-microprocessors-in-space.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/Headroom Measurement Lab Setup.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Signal Chain Web Tool Development</div>
+              <div class="body-text project-card-text">Learn more about how I contributed to the development of a precision signal chain design tool during my summer internship at Analog Devices.</div>
+            </div>
+            <a class="button" href="./project-pages/signal-chain-web-tool-development.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/Energy Analysis of Algorithms on PC.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Energy Consumption Analysis of Long Integer Algorithms</div>
+              <div class="body-text project-card-text">Learn more about the large integer library I wrote and energy software analysis I did during my NSF summer research internship at IUPUI.</div>
+            </div>
+            <a class="button" href="./project-pages/energy-consumption-analysis-of-long-integer-algorithms.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER, Social Media & Contacts -->
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/augustus-richter-664387235?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bx95JY%2FjFRTicLreGuGdC0Q%3D%3D">
+        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      
+      <a class="icon-link" href="mailto:gus@gusrichter.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
 </html>
