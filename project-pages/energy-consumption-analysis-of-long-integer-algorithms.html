@@ -60,7 +60,8 @@
       <div id="project-details">
         <div class="subheader-text">Research Background</div>
         <div class="project-details-content">
-          <div class="body-text">WILL BE COMPLETED SOON</div>
+          <div class="body-text">While execution time remains one of the most researched areas of algorithmic and software optimization, with numerous resources existing on the subject, energy consumption is a far less studied but equally important topic in applications such as wireless sensor networks (WSN). A company or government might wish to collect data for an AI program using sensor nodes that are placed in remote locations. To prevent malicious attacks such as data poisoning, devices should implement an authentication protocol for messages that are sent on the network. Signature verification will be hindered by the energy constraints of each node. The goal of the research project was to analyze how various optimizations affected the energy consumption of ECDSA and RSA on the ESP32 platform.</div>
+          <div class="body-text">Our group (mostly me) wrote a library in C/C++ that implemented all the underlying algorithms needed to perform modular exponentiation and scalar point multiplication. We stored numbers using arrays of unsigned long integers. The number was represented using a base 2<sup>32</sup> numeral system, so each element in the array was a coeffecient of some power of 2<sup>32</sup>. We started by writing a bitwise 32-bit multiplication algorithm and then used it to write a schoolbook multiplication algorithm for our 32-bit array data type. We also implemented schoolbook addition, bit-shifting, rounding, and other utility algorithms. Those served as the foundation for a long division algorithm that returned both a quotient and remainder. From there, modular exponentiation was implemented using the square and multiply method (a.k.a. binary exponentiation). An algorithm to compute the modular multiplicative inverse of a number was also implemented using the Extended Euclidean algorithm.</div>
         </div>
       </div>
 
@@ -98,7 +99,7 @@
             </div>
             <div class="gallery-image-container half-width">
               <img src="../assets/images/Oscilloscope Display of Program Execution.jpeg" class="gallery-image">
-              <span class="image-caption">Current Spike during Program Execution</span>
+              <span class="image-caption">Current Spike from Program Execution</span>
             </div>
             <div class="gallery-image-container">
               <img src="../assets/images/Energy Analysis of Algorithms on PC.jpg" class="gallery-image">
