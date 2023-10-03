@@ -48,7 +48,7 @@
           -->
         <div class="main-title">Signal Chain Web Tool Development</div>
         <div class="body-text">During the summer of 2023, I completed an internship at Analog Devices in their headquarters in Wilmington, Massachusetts. I worked in the Precision Signal Chain Tools Group within the industrial & multi-market business unit. The group develops web tools for designing and analyzing various types of circuits. The primary tool I worked on was the noise tool (will be renamed soon), but I also worked on the popular Filter Wizard tool. Both of these tools are offered on ADI's Precision Studio platform; click the button below to explore them. I was assigned multiple projects over the summer; our team's workflow revolved around Agile sprint planning.</div>
-        <a class="button" id="my-work-link" href="https://tools.analog.com/en/precisionstudio/">
+        <a class="button" id="my-work-link" target="_blank" href="https://tools.analog.com/en/precisionstudio/">
           <span class="button-text">Check out ADI Precision Studio</span> 
           <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
         </a>
@@ -62,11 +62,11 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Research Background</div>
+        <div class="subheader-text">Work Assignments</div>
         <div class="project-details-content">
-          <div class="body-text">Explain the signal chain tool</div>
-          <div class="body-text">The first big assignment I was given was to complete missing headroom data for some operational amplifiers, differential amplifiers, and instrumentation amplifiers. </div>
-          <div class="body-text">Graphing algorithm</div>
+          <div class="body-text">The signal chain design tool (known as the Noise tool) provides a fast, efficient interface for constructing precision signal chains. The user can analyze </div>
+          <div class="body-text">The first big assignment I was given was to complete missing headroom data for some operational amplifiers, differential amplifiers, and instrumentation amplifiers. Good datasheets will provide a plot with either a traditional claw curve - where you see the output headroom you need to avoid satuation for a given load current - or a saturation voltage/output swing curve - where you explicitly see the point at which the amplifier saturates for a given load current or resistance. Our simulation library needs the claw curve data, so it was my job to convert saturation voltage plots to headroom. Most of the work took place in Excel. I digitized points on the saturation voltage plot from the datasheet for a missing part and then upload that data to the part's respective Excel file. Then, I converted the saturation voltage to headroom by subtracting the saturation voltage from the supply rail voltage. Some of the saturation voltage curves were functions of load resistance, so I had to convert the abcissas to load current by dividing the headroom by its corresponding load resistance. There were some other data manipulations I had to perform. In addition, I also improved a script we used for interpolating data between the headroom points by implementing faster search algorithms and fixing edge failure cases. Some datasheets did not provide any type of headroom or signal swing plot, so I helped someone else on the team collect headroom data for a few chips as seen below in the Image Gallery.</div>
+          <div class="body-text">The second big assignment I was given involved the display of the Noise tool's dual axis plots.</div>
           <div class="body-text">Nelder mead</div>
           <div class="body-text">WebAssembly</div>
           <div class="body-text">Other stuff, mtgs, intern events</div>
@@ -120,11 +120,11 @@
     <!-- FOOTER, Social Media & Contacts -->
     <div id="footer">
       <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/augustus-richter-664387235?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bx95JY%2FjFRTicLreGuGdC0Q%3D%3D">
-        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
       </a>
       
       <a class="icon-link" href="mailto:gus@gusrichter.com">
-        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>
 
