@@ -47,7 +47,7 @@
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
         <div class="main-title">Radiation Analysis of Microprocessors in Space</div>
-        <div class="body-text">I am currently assisting with research in the Reliable Electronics and Systems Lab at the Luddy School of Informatics, Computing, and Engineering. My specific group is focused on writing benchmark programs that employ novel testing techniques for detecting the presence of radiation and estimating its amount in embedded systems modules. We are targeting the MSP430FR6989 mixed-signal microcontroller, which sees frequent use in space applications.</div>
+        <div class="body-text">I am currently assisting with research in the Reliable Electronics and Systems Lab at the Luddy School of Informatics, Computing, and Engineering. I am analyzing the side-channel vulnerabilities of an AES accelerator under irradiation using deep learning. We are targeting the MSP430FR6989 mixed-signal microcontroller, which sees frequent use in space applications and has a cryptographic acceleration module.</div>
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -60,7 +60,8 @@
       <div id="project-details">
         <div class="subheader-text">Research Background</div>
         <div class="project-details-content">
-          <div class="body-text">Measuring the amount of radiation a system-on-chip (SoC) has been exposed to usually requires a dosimeter. There are a number of advanced techniques for radiation telemetry, but the prerequisite parts take up space on a board and increase the cost per board. In addition, the techniques provide data on environmental radiation and not component reponse. The goal of our research is to refine novel machine learning approaches for both (1) detecting the presence of total ionizing dose (TID) effects in SoCs using convolutional neural network (CNN) binary classification and (2) predicting the TID value using a regression model.</div>
+          <div class="body-text">The response of commercial off-the-shelf (COTS) microcontrollers to total ionizing dose (TID) radiation has been evaluated for numerous internal modules, such as the ADC, SRAM, and clock system. However, there is a critical lack of research into the TID response of cryptographic modules and into any side-channel vulnerabilities the exposure creates. I am writing a paper that will present TID data on the AES accelerator in the MSP430FR6989. It will also discuss how the power consumption traces of the benchmark program for testing the AES accelerator can be used to train a deep learning model for retrieving the master key.</div>
+          <div class="body-text">There are known vulnerabilities that arise with the implementation of cryptographic algorithms; differences in how a cipher treats various bit configurations of a private key can expose the key itself, such as side-channel leakage of 1 bits within the m-ary method employed by the RSA and elliptic curve cryptosystems. Radiation effects can, in principle, accentuate these differences in the SoC AES accelerator if the effects disproportionately influence the power consumption of certain block operations in the cipher.</div>
           <div class="body-text">WILL BE UPDATED WITH MORE INFORMATION AS THE PROJECT PROGRESSES</div>
         </div>
       </div>
