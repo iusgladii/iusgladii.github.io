@@ -58,11 +58,13 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Project Description</div>
+        <div class="subheader-text">Research Background</div>
         <div class="project-details-content">
           <div class="body-text">Interfaces that support creation and manipulation of audio have been used in music therapy contexts for many years now. Examples include incorporating digital audio workstations and MIDI instruments into therapy sessions. Previous research has demonstrated cases where an audio feedback system can be used to help induce relaxation in the user of the system. Our group decided to design an interface that played music for the user and added colored noise sources to the music in response to the onset of cardiac acceleration.</div>
           <div class="body-text">Oftentimes, self-report surveys are collected to analyze the effect of music therapy practices. However, self-report data is susceptible to a myriad of issues such as cognitive bias. Psychophysiological measurements can cut through these issues though the techniques are usually invasive. While the invasiveness may not be an issue for research, it is an issue if we want to make the interface biologically data-driven. PPG sensors provide a good balance between user comfort and analytic power. Techniques such as electroencephalography and facial electromyography provide deep insight into information such as emotional valence, relaxation, and attention. However, the electrodes and skin/scalp preparation process are too invasive for regular therapeutic use. Photoplethysmography provides enough insight into information such as attention and relaxation while remaining relatively uninvasive.</div>
-          <div class="body-text"></div>
+          <div class="body-text">The interface that I made was called Musica. It allowed the user to upload an audio recording or select a song on YouTube to stream using the youtube-dl and FFmpeg command-line tool. The user also picked a specific color noise source. Then, the application enters an initial data collection phase. The user straps a PPG sensor onto their finger; the sensor is attached to an Arduino microcontroller which is connected to the PC over USB. The application collects five minutes of cardiac data from the user to get a baseline value for their heart rate. The PPG signal is converted to heart rate by differentiating the signal to find the systolic peaks and then dividing the time distance between two adjacent peaks by 60,000. The application then moves into the final relaxation phase. The song the user selected plays while the application continuously collects heart rate data and computes a change scores heart rate value. Change scores are used to account for individual differences in psychophysiological response and for possible inaccuracy due to the sensor's design and construction. The application differentiates the change scores computations and introduces noise to the song if repeated acceleration above the baseline is detected.</div>
+          <div class="body-text">The second exercise the user can pick to participate in is a music play-along activity. The user selects or uploads a song, and the application extracts the rhythmic structure and tempo from the song using the Librosa package. Then, the interface constructs a graphical interface that mimics the Guitar Hero game. Notes/circles fall down the screen that correspond to beats in the song, and the user has to play the notes when they reach the bottom of the screen. The user plays the notes using a Makey Makey board which can serve as alternate keyboard input for the computer.</div>
+          <div class="body-text">The research poster below was made at the end of the program and presented at a poster session. It contains more information on the sensor processing and music therapy research.</div>
         </div>
       </div>
 
@@ -94,20 +96,24 @@
                   - IMAGE_NAME: the name of the image file in assets/images
                   - IMAGE_CAPTION: to the caption of the image
             -->
-            <!--
+            
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/iuur-summer-2021/Final Research Poster.jpg" class="gallery-image">
+              <span class="image-caption">Final Summer Research Poster</span>
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/iuur-summer-2021/Heart Beat Animation and PPG Sensor.jpg" class="gallery-image">
+              <span class="image-caption">Heart Relaxation Exercise with PPG Sensor and MCU</span>
             </div>
             <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
+              <img src="../assets/images/iuur-summer-2021/Playback Exercise with MakeyMakey.jpg" class="gallery-image">
+              <span class="image-caption">Music Playback Exercise with Makey Makey</span>
             </div>
-            -->
+            <div class="gallery-image-container">
+              <img src="../assets/images/iuur-summer-2021/Music Relaxation Exercise Settings.jpg" class="gallery-image">
+              <span class="image-caption">Musica Settings Page for Selecting Song</span>
+            </div>
+            
         </div>
       </div>
     </div>
