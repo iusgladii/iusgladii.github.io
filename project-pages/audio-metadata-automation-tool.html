@@ -62,8 +62,7 @@
         <div class="project-details-content">
           <div class="body-text">Audio engineers at Jacobs record performances to 2 GB WAV files in Steinberg's WaveLab. The engineers fill metadata like location into the file through WaveLab. The engineers also place time markers in the recording during the performance to mark the beginning of songs and movements. Once the performance is over and post-production is complete, the engineers have to rewrite the metadata into a Word report file template. The markers must be exported from WaveLab to a text file, and then the marker metadata is copy and pasted into Word.</div>
           <div class="body-text">The tool I wrote is a VBScript program that automates the entire process of report file creation. When the engineer is done with post-production, they simply drag and drop one or more WAV files onto the script icon. The structure of the report file is contained in the script, so the script makes a new Word document and fills in the metadata using that structure. The metadata is extracted from the WAV file(s) using the Exiftool command-line application. The metadata is extracted to a set of temporary files, and the script then reads the contents of those files and writes it to the Word document.</div>
-          <div class="body-text"></div>
-          <div class="body-text"></div>
+          <div class="body-text">The tool is frequently used by the audio engineering students at Jacobs. I created a way to remotely update the script since I finished the program. It involves uploading a new version to an IU web server and then downloading the script and dependencies to the host computer. I crafted a set of four commands to update the script that the audio professors can easily enter into the command prompt on the host machine.</div>
         </div>
       </div>
 
