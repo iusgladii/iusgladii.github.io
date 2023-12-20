@@ -65,7 +65,17 @@
           <div class="body-text">Total ionizing dose (TID) data has been collected for many internal SoC modules of commercial SoC microprocessors, such as the ADC, SRAM, and clock system modules. In spite of the importance of encrypted communication links, few analyses have been brought forth on the TID performance of cryptographic modules in complex SoC devices. While the MSP430FR6989 chip and other related models in the MSP430x5xx and MSP430x6xx family have been tested in radiation environments before, the research has generally focused on obtaining pass/fail data of internal modules under increasing doses of ionizing radiation. No data, pass/fail or otherwise, to the best of our knowledge, has been presented on the cryptographic acceleration and generation module of this family.</div>
           <div class="body-text">The implementation of a symmetric-key infrastructure on a spacecraft that uses this family of microcontrollers requires knowledge of (1) when the AES accelerator will fail to correctly encrypt or decrypt payloads and (2) when the chosen key generation facility will fail to produce random bit sequences. The threshold that indicates when the AES coprocessor fails will be found by irradiating the device under test with an increasing dose until the coprocessor produces incorrect results. For analysis of RBG reliability, the randomness of a collection of true and pseudo-RBG techniques will be compared under an increasing dose. The randomness will be compared by applying two standard batteries: the NIST SP 800-22 Suite and the NIST SP 800-90B Suite. SP 800-22 is a collection of null hypothesis tests that analyze the distribution of the output of random number generators. SP 800-90B is a collection of statistical estimators that measure the min-entropy of the generator source.</div>
           <div class="body-text">Min-entropy is a more conservative estimate of randomness than Shannon Entropy, and it is defined as
-            <code style="color:rgb(0, 0, 0);font-size: 110%;">H(<var>X</var>) = -log(max<sub>x<sub>i</sub>&isin;&Omega;</sub> p(x<sub>i</sub>))</code>
+            <math display="block" style="border: 1px dotted black;">
+              <mrow>
+                <msup><mi>a</mi><mn>2</mn></msup>
+                <mo>+</mo>
+            
+                <msup><mi>b</mi><mn>2</mn></msup>
+                <mo> = </mo>
+            
+                <msup><mi>c</mi><mn>2</mn></msup>
+             </mrow>
+            </math>
             for a discrete variable <var>X</var> with distribution &Omega;.
           </div>
           <div class="body-text">The radiation test is currently on track to be performed in January. The results will be submitted to a conference by February.</div>
