@@ -67,26 +67,34 @@
           <div class="body-text">Min-entropy is a more conservative estimate of randomness than Shannon entropy, and it is defined as
             <math display="block" style="font-size: 100%;">
               <mrow>
-                <msub><mi>H</mi><mi>min</mi></msub>
+                <msub><mi>H</mi><mi>min</mi></msub><mo>(</mo><mi>X</mi><mo>)</mo>
                 <mo>=</mo>
                 <mi>log</mi><mo>(</mo>
                   <mfrac>
                     <mn>1</mn>
-                    <munder>
-                      <mo movablelimits="false">max</mo>
-                      <mrow>
-                        <msub>
+                    <mrow>
+                      <munder>
+                        <mo movablelimits="false">max</mo>
+                        <mrow>
+                          <msub>
+                            <mi>x</mi>
+                            <mi>i</mi>
+                          </msub>
+                          <mi>&isin;&Omega;</mi>
+                        </mrow>
+                      </munder>
+                      <mi>
+                        p<mo>(</mo><msub>
                           <mi>x</mi>
                           <mi>i</mi>
-                        </msub>
-                        <mi>&isin;&Omega;</mi>
-                      </mrow>
-                    </munder>
+                        </msub><mo>)</mo>
+                      </mi>
+                    </mrow>
                   </mfrac>
                   <mo>)</mo>
              </mrow>
             </math>
-            for a discrete variable <math><mi>X</mi></math> with distribution <math><mi>&Omega;</mi></math>.
+            for a discrete variable <math><mi>X</mi></math> with distribution &Omega;.
           </div>
           <div class="body-text">The radiation test is currently on track to be performed in January. The results will be submitted to a conference by February.</div>
           <div class="body-text">WILL BE UPDATED WITH MORE INFORMATION AS THE PROJECT PROGRESSES</div>
