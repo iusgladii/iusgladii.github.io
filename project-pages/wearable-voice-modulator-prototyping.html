@@ -47,7 +47,7 @@
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
         <div class="main-title">Wearable Voice Modulator Prototyping</div>
-        <div class="body-text">SUMMARY IN PROGRESS; WILL BE UPDATED SOON</div>
+        <div class="body-text">For the final project in one of my electronics courses, I decided to make a wearable voice modulator. Since the course occurred during the Covid-19 pandemic, I integrated the modulator with a Covid mask. The device has a rotary encoder that allows the user to shift the pitch of their voice in real-time. I did not have time to design a PCB or enclosure for the circuit, so the final product ended up being a rough perfboard-based prototype.</div>
       </div>
 
       <!-- PROJECT DETAILS -->
@@ -60,7 +60,9 @@
       <div id="project-details">
         <div class="subheader-text">Project Description</div>
         <div class="project-details-content">
-          <div class="body-text">DESCRIPTION IN PROGRESS; WILL BE UPDATED SOON</div>
+          <div class="body-text">Given my inexperience at embedded programming at the time, I decided to use the ATtiny84 as the microcontroller for the device. It is an 8-bit RISC-based MCU that can be programmed like an Arduino but is the size of a through-hole op amp. The signal chain stages are: sensor -> preamplifier -> ADC -> DSP Algorithms -> DAC -> amplifier -> speaker. The sensor is a tiny electret microphone that was placed inside of the mask. The preamplifier is a discrete transistor (BJT) amplifier that offsets the signal and boosts it to line level. The ADC, DSP algorithms, and DAC are all part of the MCU. The amplifier is an LM386 circuit whose output is sent to a miniature speaker on the outside of the mask.</div>
+          <div class="body-text">The firmware control structure consists entirely of interrupt service routines (ISR). The program has a circular buffer to store audio samples; its read and write functions are controlled by separate pointers. When the ADC produces a new sample, an ISR triggers that writes the sample to the buffer. There is also a timer in the program whose duration is equal to the length of the ADC period. When the timer runs out, another ISR triggers that reads the oldest sample from the buffer. When the rotary encoder is turned, the program recognizes the logic state change and either halves or doubles the timer duration, via an ISR, depending on the direction of the turn. Any turn creates a data synchronization problem since the write data rate is different from the read data rate. This problem is solved by resampling the signal. Samples are either skipped or repeated, depending on the read/write rate mismatch, and filtered with a moving-average function to attenuate distortion from discontinuities.</div>
+          <div class="body-text">The modulator worked, but it faced issues with feedback. The audio resolution had the same quality - sample rate and bit depth - as telephones. A simple time-domain algorithm was chosen to achieve the pitch-shifting function since the device faced serious computational resource limitations. A more powerful microprocessor, along with mechanical design of the mask, would fix this set of issues.</div>
         </div>
       </div>
 
@@ -92,20 +94,16 @@
                   - IMAGE_NAME: the name of the image file in assets/images
                   - IMAGE_CAPTION: to the caption of the image
             -->
-            <!--
             <div class="gallery-image-container half-width">
-              <img src="../assets/images/code.jpeg" class="gallery-image">
+              <img src="../assets/images/Voice Modulator Mask Close-Up.jpg" class="gallery-image">
               <span class="image-caption">Give your image a caption. People love context.</span>
             </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/sketchbook.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/camera.jpeg" class="gallery-image">
-              <span class="image-caption">Give your image a caption. People love context.</span>
-            </div>
-            -->
+            <iframe width="420" height="315"
+              src="https://youtu.be/aW6ZX3D_xuc">
+            </iframe>
+            <iframe width="420" height="315"
+              src="https://youtube.com/shorts/-9KQDltFFdM">
+            </iframe>
         </div>
       </div>
     </div>
