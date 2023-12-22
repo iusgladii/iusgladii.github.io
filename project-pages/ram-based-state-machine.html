@@ -58,7 +58,7 @@
         - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
       -->
       <div id="project-details">
-        <div class="subheader-text">Project Description</div>
+        <div class="subheader-text">Lab Description</div>
         <div class="project-details-content">
           <div class="body-text">We used the NTE6810 memory chip which has 128 locations, each of which can store a byte. Note that 128 locations require 7 bits of address information. The data pins are bi-directional and 3-state. If the R/W pin is HIGH, then the memory chip is in READ mode and the data pins are outputs. If the R/W pin is LOW, then the data pins are inputs. The address pins are always inputs. A 3-state (sometimes called tri-state) output can be in a logic LOW state, logic HIGH state, and a high-impedance state which is neither HIGH nor LOW. In this state, another device can take over and drive the line connected to the disabled output to a valid logic state. We used the 74HC541 chip, which has 3-state outputs, to create an octal buffer with an 8-bit DATA IN buss and 8-bit DATA OUT buss.</div>
           <div class="body-text">The 8-bit counter was constructed using two 74LS569 ICs, a pushbutton circuit, set of logic switches, and two TIL311 displays. Pushing the LOAD button in the pushbutton circuit loads the binary value set by the logic switches into the counter, and pushing the CLOCK button increments the counter from that point.</div>
@@ -99,13 +99,13 @@
               <img src="../assets/images/ram-based-state-machine/RAM-Based State Machine Protoboard.jpg" class="gallery-image">
               <span class="image-caption">Finished Version of Machine on Protoboard</span>
             </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/ram-based-state-machine/Hierarchical Circuit Diagram of Machine.png" class="gallery-image">
-              <span class="image-caption">Hierarchical Circuit Diagram of Machine</span>
-            </div>
             <div class="gallery-image-container">
               <img src="../assets/images/ram-based-state-machine/Data for Three Programs.png" class="gallery-image">
               <span class="image-caption">Data for Three Machine Programs</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/ram-based-state-machine/Hierarchical Circuit Diagram of Machine.png" class="gallery-image">
+              <span class="image-caption">Hierarchical Circuit Diagram of Machine</span>
             </div>
         </div>
       </div>
